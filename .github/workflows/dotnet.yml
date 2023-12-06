@@ -26,3 +26,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Execute make_html.sh
+      run: sh make_html.sh FlatBiblio/bin/Debug/net8.0/FlatBiblio
